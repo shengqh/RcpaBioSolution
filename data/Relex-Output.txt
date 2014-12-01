@@ -1,0 +1,12 @@
+RelEx v. 0.9 (2002)
+Michael J. MacCoss, The Scripps Research Institute, La Jolla, CA (2002)
+
+P	143E_HUMAN	143E_HUMAN (P42655) 14-3-3 protein epsilon (Mitochondrial import stimulation factor L subunit) (Protein kinase C inhibitor protein-1) (KCIP-1) (14-3-3E)	3.877	0	1
+S	N	K.LICCDILDVLDK.H	3.877	MDJ_Elute_1_051013_Nano_05.21807.21807.2.chro	u:\MaDJ\2d_icat_pn_cn\chro_unmodified\	7.93	
+S	N	K.LICCDILDVLDK.H	3.877	MDJ_Elute_1_051013_Nano_05.21818.21818.2.chro	u:\MaDJ\2d_icat_pn_cn\chro_unmodified\	7.69	Duplicate
+P	A1B1_MOUSE, Q9DBG3, Q80XJ4	A1B1_MOUSE (O35643) Adapter-related protein complex 1 beta 1 subunit (Beta-adaptin 1) (Adaptor protein complex AP-1 beta-1 subunit) (Golgi adaptor HA1/AP1 adaptin, beta subunit) (Clathrin assembly protein complex 1 beta large chain), Q9DBG3 (Q9DBG3) 1300012O03Rik protein, Q80XJ4 (Q80XJ4) Ap2b1 protein	0.378	0.221	3
+S	N	R.CVSTLLDLIQTK.V	0.626	MDJ_Elute_1_051012_Nano_06.23343.23343.2.chro	u:\MaDJ\2d_icat_pn_cn\chro_unmodified\	3.24	Duplicate
+S	N	R.CVSTLLDLIQTK.V	0.626	MDJ_Elute_1_051012_Nano_06.23445.23445.2.chro	u:\MaDJ\2d_icat_pn_cn\chro_unmodified\	3.6	
+S	N	R.CVSTLLDLIQTK.V	0.303	MDJ_Elute_1_051013_Nano_06.22865.22865.2.chro	u:\MaDJ\2d_icat_pn_cn\chro_unmodified\	3.4	Duplicate
+S	N	R.CVSTLLDLIQTK.V	0.303	MDJ_Elute_1_051013_Nano_06.22889.22889.2.chro	u:\MaDJ\2d_icat_pn_cn\chro_unmodified\	3.46	
+R	N	R.C*VSTLLDLIQTK.V	0.204	MDJ_Elute_1_051013_Nano_06.22844.22844.2.chro	u:\MaDJ\2d_icat_pn_cn\chro\	6.45	

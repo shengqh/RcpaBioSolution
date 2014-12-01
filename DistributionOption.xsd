@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by dreamtiger (rcpa) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:element name="DistributionOption">
+    <xs:annotation>
+      <xs:documentation>Option used to do distribution statistic</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="SourceFile">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fileName" type="xs:string" />
+              <xs:element name="fileType" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="databaseType" type="xs:string" />
+        <xs:element name="distributionType" type="DistributionType" />
+        <xs:element name="ClassificationInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="classificationType" type="ClassificationType" />
+              <xs:element name="classificationPrinciple" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ClassificationSet">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ClassificationItem" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="classifiedName" type="xs:string" />
+                    <xs:element name="experimentName" type="xs:string" maxOccurs="unbounded" />
+                    <xs:element name="experimentValue" type="xs:double" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FilterByPeptide">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="filterType" type="FilterType" />
+              <xs:element name="from" type="xs:nonNegativeInteger" />
+              <xs:element name="to" type="xs:nonNegativeInteger" />
+              <xs:element name="step" type="xs:positiveInteger" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="StatisticSet" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RangeValue" type="xs:double" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="exportIndividualFractionResult" type="xs:boolean" minOccurs="0" />
+        <xs:element name="modifiedPeptideOnly" type="xs:boolean" />
+        <xs:element name="modifiedAminoacid" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="ClassificationType">
+    <xs:annotation>
+      <xs:documentation>Classification type</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MW" />
+      <xs:enumeration value="PI" />
+      <xs:enumeration value="ABUNDANCE" />
+      <xs:enumeration value="METHOD" />
+      <xs:enumeration value="OTHER" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="DistributionType">
+    <xs:annotation>
+      <xs:documentation>Protein distribution or peptide distribution</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Protein" />
+      <xs:enumeration value="Peptide" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="FilterType">
+    <xs:annotation>
+      <xs:documentation>Filter classification item</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="UniquePeptideCount" />
+      <xs:enumeration value="PeptideCount" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="FileType">
+    <xs:annotation>
+      <xs:documentation>Source file type</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BuildSummary" />
+      <xs:enumeration value="MzIdent" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

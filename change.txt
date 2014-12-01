@@ -1,0 +1,20 @@
+2010-07-13 Version 1.9.6
+Bug fixed : Mascot Spectra Image Builder,对Acetyl (Protein N-term)修饰进行兼容判断时，考虑原始peptides文件中没有modification一栏。
+
+2009-03-26 Version 1.9.3
+Enhanced : Mascot Spectra Image (Multiple File) Builder, 对Acetyl (Protein N-term)修饰进行兼容。
+
+2009-03-25 Version 1.9.2
+New : 增加Mascot Spectra Image Multiple File Builder，可以针对多个MGF进行处理。
+
+2009-12-07 Version 1.9.0
+Enhanced : Spectra Image Builder可选择输出格式为png还是jpg。png格式图像较小，为推荐选项。
+
+2009-11-12 Version 1.8.9
+Enhanced : 增加了Distribution初始化时候的预分类。
+
+2009-10-22 Version 1.8.8
+Enhanced : MascotSpectraImageBuilder兼容N端动态修饰。
+
+2009-10-21 Version 1.8.7
+Enhanced : 兼容Excel保存的文本格式。Excel保存peptides文件后有时候会在FileScan一栏加上双引号，导致部分程序解析出错。

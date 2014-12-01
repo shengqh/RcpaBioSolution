@@ -1,0 +1,15 @@
+	LCQ_Bound	LCQ_Flow	LTQ_Bound	LTQ_Flow	Orbitrap_Bound	Orbitrap_Flow
+LCQ_Bound	136	65	131	107	128	125
+LCQ_Flow	65	133	87	131	87	128
+LTQ_Bound	131	87	191	137	174	162
+LTQ_Flow	107	131	137	233	140	212
+Orbitrap_Bound	128	87	174	140	199	173
+Orbitrap_Flow	125	128	162	212	173	258
+
+OverlapCount	MatchedCount	Percent
+6	60	19.74%
+5	61	20.07%
+4	40	13.16%
+3	55	18.09%
+2	72	23.68%
+1	16	5.26%

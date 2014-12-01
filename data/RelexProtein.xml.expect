@@ -1,0 +1,14 @@
+<cn.ac.rcpa.bio.tools.relex.RelexProtein>
+  <proteins>
+    <string>ADHX_MOUSE</string>
+    <string>Q8C662</string>
+  </proteins>
+  <references>
+    <string>ADHX_MOUSE (P28474) Alcohol dehydrogenase class III (EC 1.1.1.1) (Alcohol dehydrogenase 2) (Glutathione-dependent formaldehyde dehydrogenase) (EC 1.2.1.1) (FDH) (FALDH) (Alcohol dehydrogenase-B2) (ADH-B2)</string>
+    <string>Q8C662 (Q8C662) Alcohol dehydrogenase 5</string>
+  </references>
+  <ratio>1.644</ratio>
+  <sd>0.078</sd>
+  <peptideCount>3</peptideCount>
+  <peptides/>
+</cn.ac.rcpa.bio.tools.relex.RelexProtein>
