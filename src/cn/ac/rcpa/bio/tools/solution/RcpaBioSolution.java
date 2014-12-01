@@ -5,7 +5,6 @@ import cn.ac.rcpa.bio.tools.TheoreticalDigestorUI;
 import cn.ac.rcpa.bio.tools.TheoreticalSpectrumBuilderUI;
 import cn.ac.rcpa.bio.tools.TruncatedDigestBuilderUI;
 import cn.ac.rcpa.bio.tools.annotation.ProteinAnnotationByFastaFileUI;
-import cn.ac.rcpa.bio.tools.convert.Dta2MascotGenericFormatUI;
 import cn.ac.rcpa.bio.tools.convert.ExtractPeptideHitFromProteinUI;
 import cn.ac.rcpa.bio.tools.convert.FastaToAligmentCompatibleConverterUI;
 import cn.ac.rcpa.bio.tools.convert.UniprotDat2FastaUI;
@@ -15,9 +14,6 @@ import cn.ac.rcpa.bio.tools.database.ExtractFastaFileByAccessNumberUI;
 import cn.ac.rcpa.bio.tools.database.ExtractFastaFileByReferenceUI;
 import cn.ac.rcpa.bio.tools.database.Fasta2AccessNumberUI;
 import cn.ac.rcpa.bio.tools.database.IPIAccessNumber2SwissProtUI;
-import cn.ac.rcpa.bio.tools.database.ReversedDatabaseBuilderUI;
-import cn.ac.rcpa.bio.tools.database.ReversedDatabaseOnlyBuilderUI;
-import cn.ac.rcpa.bio.tools.distribution.DistributionCalculatorUI;
 import cn.ac.rcpa.bio.tools.filter.IdentifiedPeptideInUniqueXProteinFilterUI;
 import cn.ac.rcpa.bio.tools.filter.IdentifiedPeptideSpRankFilterUI;
 import cn.ac.rcpa.bio.tools.filter.IdentifiedProteinInfoUniqueXPeptideDistillerUI;
@@ -38,7 +34,6 @@ import cn.ac.rcpa.bio.tools.modification.ModifiedPeptidePairFractionAndPhValueRe
 import cn.ac.rcpa.bio.tools.modification.ModifiedPeptidesSpecialFormatDistillerUI;
 import cn.ac.rcpa.bio.tools.modification.PairwiseDifferentModificationPeptideFilterUI;
 import cn.ac.rcpa.bio.tools.modification.PairwiseModificationPeptideFilterUI;
-import cn.ac.rcpa.bio.tools.modification.PhosphoPeptidePICalculatorUI;
 import cn.ac.rcpa.bio.tools.other.MergePeptideBuilderUI;
 import cn.ac.rcpa.bio.tools.other.PeptideDetectabilityBuilderUI;
 import cn.ac.rcpa.bio.tools.other.SubstractPeptideBuilderUI;
@@ -159,7 +154,6 @@ public class RcpaBioSolution extends AbstractRcpaSolutionUI {
 		addCommand(new ExtractFastaFileByAccessNumberPatternUI.Command());
 		addCommand(new CalculateDatabaseSizeUI.Command());
 		// addCommand(new MascotHtml2TextProcessorUI.Command());
-		addCommand(new PhosphoPeptidePICalculatorUI.Command());
 	}
 
 	public static void main(String[] args) {

@@ -47,6 +47,5 @@
 	<classpathentry kind="lib" path="/RcpaBioJava/lib/xstream-1.1.2.jar"/>
 	<classpathentry kind="lib" path="lib/iped-xml.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/RcpaBioJava"/>
-	<classpathentry kind="lib" path="E:/sqh/ScienceTools/Census/census.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
