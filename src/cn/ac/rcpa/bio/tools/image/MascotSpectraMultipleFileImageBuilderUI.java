@@ -38,9 +38,14 @@ import cn.ac.rcpa.utils.OpenFileArgument;
 
 public class MascotSpectraMultipleFileImageBuilderUI extends AbstractUI {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 795682629454701833L;
+
 	private static String title = "Mascot Spectra Image Multiple File Builder";
 
-	private static String version = "1.0.4";
+	private static String version = "1.0.5";
 
 	private JRcpaModificationTextField txtStaticModification = new JRcpaModificationTextField(
 			"StaticModification",
@@ -150,6 +155,8 @@ public class MascotSpectraMultipleFileImageBuilderUI extends AbstractUI {
 
 		Map<Character, Double> dynamicModification = txtDynamicModification
 				.getModificationMap(IsotopicType.Monoisotopic);
+		
+		double isotopicGap = Atom.C.getHeavy_isotopics()[0].getMass() - Atom.C.getMono_isotopic().getMass();
 
 		try {
 			List<SlimIdentifiedPeptide> peptides = new SlimIdentifiedPeptideReader(
@@ -223,7 +230,13 @@ public class MascotSpectraMultipleFileImageBuilderUI extends AbstractUI {
 							.getMono_isotopic().getMass()
 							* (peptide.getCharge() - 1))
 							/ peptide.getCharge();
-					if (Math.abs(pkl.getPrecursorMZ() - theoreticalMz) > precursorTolerance) {
+					
+					double gap = Math.abs(pkl.getPrecursorMZ() - theoreticalMz) * peptide.getCharge();
+					
+					//Consider the the precursor is second or third isotopic ion
+					boolean bMatched = (gap < precursorTolerance) || (gap - isotopicGap < precursorTolerance) ||  (gap - 2 * isotopicGap < precursorTolerance); 
+					
+					if (!bMatched) {
 						throw new AccessException(
 								peptide.getFileName().getLongFilename()
 										+ ","
@@ -246,7 +259,7 @@ public class MascotSpectraMultipleFileImageBuilderUI extends AbstractUI {
 				}
 			}
 
-			JOptionPane.showMessageDialog(this, "Succeed", "Congradulation",
+			JOptionPane.showMessageDialog(this, "Succeed", "Congratulations",
 					JOptionPane.INFORMATION_MESSAGE);
 		} catch (Exception ex) {
 			ex.printStackTrace();

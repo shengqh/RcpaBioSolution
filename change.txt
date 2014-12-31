@@ -1,20 +1,23 @@
+ï»¿2014-12-31 Version 2.0.3
+Enhanced : Mascot Spectra Image Builder, considering the precursor may be the second or third isotope ion.
+
 2010-07-13 Version 1.9.6
-Bug fixed : Mascot Spectra Image Builder,¶ÔAcetyl (Protein N-term)ĞŞÊÎ½øĞĞ¼æÈİÅĞ¶ÏÊ±£¬¿¼ÂÇÔ­Ê¼peptidesÎÄ¼şÖĞÃ»ÓĞmodificationÒ»À¸¡£
+Bug fixed : Mascot Spectra Image Builder,å¯¹Acetyl (Protein N-term)ä¿®é¥°è¿›è¡Œå…¼å®¹åˆ¤æ–­æ—¶ï¼Œè€ƒè™‘åŸå§‹peptidesæ–‡ä»¶ä¸­æ²¡æœ‰modificationä¸€æ ã€‚
 
 2009-03-26 Version 1.9.3
-Enhanced : Mascot Spectra Image (Multiple File) Builder, ¶ÔAcetyl (Protein N-term)ĞŞÊÎ½øĞĞ¼æÈİ¡£
+Enhanced : Mascot Spectra Image (Multiple File) Builder, å¯¹Acetyl (Protein N-term)ä¿®é¥°è¿›è¡Œå…¼å®¹ã€‚
 
 2009-03-25 Version 1.9.2
-New : Ôö¼ÓMascot Spectra Image Multiple File Builder£¬¿ÉÒÔÕë¶Ô¶à¸öMGF½øĞĞ´¦Àí¡£
+New : å¢åŠ Mascot Spectra Image Multiple File Builderï¼Œå¯ä»¥é’ˆå¯¹å¤šä¸ªMGFè¿›è¡Œå¤„ç†ã€‚
 
 2009-12-07 Version 1.9.0
-Enhanced : Spectra Image Builder¿ÉÑ¡ÔñÊä³ö¸ñÊ½Îªpng»¹ÊÇjpg¡£png¸ñÊ½Í¼Ïñ½ÏĞ¡£¬ÎªÍÆ¼öÑ¡Ïî¡£
+Enhanced : Spectra Image Builderå¯é€‰æ‹©è¾“å‡ºæ ¼å¼ä¸ºpngè¿˜æ˜¯jpgã€‚pngæ ¼å¼å›¾åƒè¾ƒå°ï¼Œä¸ºæ¨èé€‰é¡¹ã€‚
 
 2009-11-12 Version 1.8.9
-Enhanced : Ôö¼ÓÁËDistribution³õÊ¼»¯Ê±ºòµÄÔ¤·ÖÀà¡£
+Enhanced : å¢åŠ äº†Distributionåˆå§‹åŒ–æ—¶å€™çš„é¢„åˆ†ç±»ã€‚
 
 2009-10-22 Version 1.8.8
-Enhanced : MascotSpectraImageBuilder¼æÈİN¶Ë¶¯Ì¬ĞŞÊÎ¡£
+Enhanced : MascotSpectraImageBuilderå…¼å®¹Nç«¯åŠ¨æ€ä¿®é¥°ã€‚
 
 2009-10-21 Version 1.8.7
-Enhanced : ¼æÈİExcel±£´æµÄÎÄ±¾¸ñÊ½¡£Excel±£´æpeptidesÎÄ¼şºóÓĞÊ±ºò»áÔÚFileScanÒ»À¸¼ÓÉÏË«ÒıºÅ£¬µ¼ÖÂ²¿·Ö³ÌĞò½âÎö³ö´í¡£
+Enhanced : å…¼å®¹Excelä¿å­˜çš„æ–‡æœ¬æ ¼å¼ã€‚Excelä¿å­˜peptidesæ–‡ä»¶åæœ‰æ—¶å€™ä¼šåœ¨FileScanä¸€æ åŠ ä¸ŠåŒå¼•å·ï¼Œå¯¼è‡´éƒ¨åˆ†ç¨‹åºè§£æå‡ºé”™ã€‚

@@ -15,9 +15,14 @@ import cn.ac.rcpa.utils.DirectoryArgument;
 
 public class SequestSpectraImageBuilderUI extends
 		AbstractFileProcessorWithFileArgumentUI {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6700064115492140231L;
+
 	private static String title = "Sequest Spectra Image Builder";
 
-	private static String version = "1.1.3";
+	private static String version = "1.1.5";
 
 	private JRcpaIntegerField scale = new JRcpaIntegerField("Scale", "Scale",
 			1, true);
