@@ -66,7 +66,7 @@ public class RcpaBioSolution extends AbstractRcpaSolutionUI {
 
 	private static final String title = "RCPA Bioinformatics Solution";
 
-	private static final String version = "2.0.3";
+	private static final String version = "2.0.4";
 
 	public RcpaBioSolution() {
 		super(title, version);
