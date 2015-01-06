@@ -66,7 +66,7 @@ public class RcpaBioSolution extends AbstractRcpaSolutionUI {
 
 	private static final String title = "RCPA Bioinformatics Solution";
 
-	private static final String version = "2.0.4";
+	private static final String version = "2.0.5";
 
 	public RcpaBioSolution() {
 		super(title, version);
@@ -76,9 +76,9 @@ public class RcpaBioSolution extends AbstractRcpaSolutionUI {
 	protected void addAllCommand() {
 		/** Annotation **/
 		//addCommand(new SequestProteinGroupSimplifierCommand());
-		addCommand(new ProteinAnnotationByFastaFileUI.Command());
+		//addCommand(new ProteinAnnotationByFastaFileUI.Command());
 		addCommand(new SequestSpectraImageBuilderUI.Command());
-		addCommand(new MascotSpectraImageBuilderUI.Command());
+		//addCommand(new MascotSpectraImageBuilderUI.Command());
 		addCommand(new MascotSpectraMultipleFileImageBuilderUI.Command());
 
 		// addCommand(new DBAnnotationFromFastaFileUI.Command());

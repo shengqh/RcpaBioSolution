@@ -46,7 +46,7 @@ public class MascotSpectraMultipleFileImageBuilderUI extends AbstractUI {
 
 	private static String title = "Mascot Spectra Image Multiple File Builder";
 
-	private static String version = "1.0.6";
+	private static String version = "1.0.7";
 
 	private JRcpaModificationTextField txtStaticModification = new JRcpaModificationTextField("StaticModification", "Static Modification (as: C +57.02 STY -17.99)", "C +57.02", false);
 
@@ -198,7 +198,8 @@ public class MascotSpectraMultipleFileImageBuilderUI extends AbstractUI {
 
 						double theoreticalMz = (spr.getPrecursorMass() + Atom.H.getMono_isotopic().getMass() * (peptide.getCharge() - 1)) / peptide.getCharge();
 
-						double gap = Math.abs(pkl.getPrecursorMZ() - theoreticalMz) * peptide.getCharge();
+						double g = (pkl.getPrecursorMZ() - theoreticalMz) * peptide.getCharge();
+						double gap = Math.abs(g);
 
 						// Consider the the precursor is second or third
 						// isotopic ion
@@ -209,7 +210,7 @@ public class MascotSpectraMultipleFileImageBuilderUI extends AbstractUI {
 
 						if (!bMatched) {
 							String info = String.format("%s\t%s\t%d\t%f\t%f\t%f", peptide.getFileName().getShortFilename(), peptide.getSequence(), peptide.getCharge(), pkl.getPrecursorMZ(),
-									theoreticalMz, gap);
+									theoreticalMz, g);
 							ps.println(info);
 							System.err.format("Precursor m/z are not matched: %s, %s, observedMz=%f, theoreticalMz=%f, gapMass=%f\n", peptide.getFileName().getLongFilename(), peptide.getSequence(),
 									pkl.getPrecursorMZ(), theoreticalMz, gap);
