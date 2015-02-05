@@ -5,7 +5,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.PrintStream;
-import java.rmi.AccessException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -46,9 +45,9 @@ public class MascotSpectraMultipleFileImageBuilderUI extends AbstractUI {
 
 	private static String title = "Mascot Spectra Image Multiple File Builder";
 
-	private static String version = "1.0.7";
+	private static String version = "1.0.8";
 
-	private JRcpaModificationTextField txtStaticModification = new JRcpaModificationTextField("StaticModification", "Static Modification (as: C +57.02 STY -17.99)", "C +57.02", false);
+	private JRcpaModificationTextField txtStaticModification = new JRcpaModificationTextField("StaticModification", "Static Modification (as: C +57.02 [ +229.1626), '['=Nterm, ']'=Cterm", "C +57.02", false);
 
 	private JRcpaModificationTextField txtDynamicModification = new JRcpaModificationTextField("DynamicModification", "Dynamic Modification (as: @ +79.99 # +15.99)", "", false);
 

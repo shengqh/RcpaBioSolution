@@ -4,7 +4,6 @@ import cn.ac.rcpa.bio.tools.BisulfideSpectrumUI;
 import cn.ac.rcpa.bio.tools.TheoreticalDigestorUI;
 import cn.ac.rcpa.bio.tools.TheoreticalSpectrumBuilderUI;
 import cn.ac.rcpa.bio.tools.TruncatedDigestBuilderUI;
-import cn.ac.rcpa.bio.tools.annotation.ProteinAnnotationByFastaFileUI;
 import cn.ac.rcpa.bio.tools.convert.ExtractPeptideHitFromProteinUI;
 import cn.ac.rcpa.bio.tools.convert.FastaToAligmentCompatibleConverterUI;
 import cn.ac.rcpa.bio.tools.convert.UniprotDat2FastaUI;
@@ -21,7 +20,6 @@ import cn.ac.rcpa.bio.tools.filter.IdentifiedProteinUniquePeptideCountFilterUI;
 import cn.ac.rcpa.bio.tools.filter.IdentifiedResultUniqueXPeptideFilterUI;
 import cn.ac.rcpa.bio.tools.filter.ProteinFastaFilterByWeightLargerUI;
 import cn.ac.rcpa.bio.tools.filter.ProteinFastaFilterByWeightLessUI;
-import cn.ac.rcpa.bio.tools.image.MascotSpectraImageBuilderUI;
 import cn.ac.rcpa.bio.tools.image.MascotSpectraMultipleFileImageBuilderUI;
 import cn.ac.rcpa.bio.tools.image.SequestSpectraImageBuilderUI;
 import cn.ac.rcpa.bio.tools.modification.BuildSummaryPeptideHitModificationFilterUI;
@@ -66,7 +64,7 @@ public class RcpaBioSolution extends AbstractRcpaSolutionUI {
 
 	private static final String title = "RCPA Bioinformatics Solution";
 
-	private static final String version = "2.0.5";
+	private static final String version = "2.0.6";
 
 	public RcpaBioSolution() {
 		super(title, version);
